@@ -39,3 +39,11 @@ export const CONTACT_CONTENT = {
   h1: 'Interested in working with me?',
   p: 'I"m active on all social media platforms listed below, but you can also me an email and I will get back to tou within 24-48 hours.',
 }
+
+export const FOOTER_CONTENT = {
+  logos: [
+    Images.Github,
+    Images.LinkedIn,
+    Images.Twitter,
+  ],
+}

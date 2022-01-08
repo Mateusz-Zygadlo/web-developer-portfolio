@@ -10,6 +10,11 @@ import {
 } from './logos'
 import Spense from './Spense.png'
 import YelpCamp from './YelpCamp.png'
+import {
+  Github,
+  LinkedIn,
+  Twitter,
+} from './social icons'
 
 export const Images = {
   HamburgerMenu,
@@ -21,5 +26,8 @@ export const Images = {
   Visa,
   Walmart,
   Spense,
-  YelpCamp
+  YelpCamp,
+  Github,
+  LinkedIn,
+  Twitter,
 }

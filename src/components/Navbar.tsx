@@ -21,7 +21,7 @@ export const Navbar = () => {
 
   return(
     <div 
-      className="flex justify-between items-center md:px-16 lg:px-24 px-5 py-2 md:py-4 sticky top-0 left-0 w-full z-50 bg-black"
+      className="flex justify-between items-center md:px-16 lg:px-24 px-5 py-4 sticky top-0 left-0 w-full z-50 bg-black"
       ref={myRef}
     >
       <h1 className="text-xl text-gray-300 cursor-default">Johnathan Specter</h1>
@@ -38,11 +38,11 @@ export const Navbar = () => {
       ) : (
         <>
           {isOpen ? (
-            <div className="border bg-white absolute top-2 -right-2 p-4">
+            <div className="border bg-white absolute top-2 md:top-2 right-3 md:right-14 p-4">
               <img 
                 src={Images.Close}
                 alt="close"
-                className="absolute right-4 top-4 scale-150 cursor-pointe"
+                className="absolute right-4 top-4 scale-150 cursor-pointer"
                 onClick={() => setIsOpen(false)}
               />
               <ul className="mb-3 pb-1 border-b flex flex-col items-center">
