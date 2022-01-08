@@ -6,7 +6,7 @@ export const Header = () => {
   const { h1, p, logos, projects } = HEADER_CONTENT
   
   return(
-    <div className="my-12">
+    <div className="my-12 md:px-16 lg:px-24 px-5">
       <h1 className="text-5xl lg:text-6xl lg:max-w-4xl">{h1}</h1>
       <p className="max-w-2xl">{p}</p>
       <div className="flex w-full justify-between my-8 flex-wrap">

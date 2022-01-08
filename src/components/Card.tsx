@@ -12,7 +12,7 @@ export const Card: React.FC<CardProps> = ({
   p
 }) => {
   return(
-    <div>
+    <div className="my-5">
       <img 
         src={image}
         alt="Projects"

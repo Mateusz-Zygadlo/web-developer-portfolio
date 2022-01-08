@@ -2,6 +2,8 @@ import React from 'react'
 import {
   Navbar,
   Header,
+  History,
+  Contact,
 } from '../components'
 import { useScrollToTop } from '../hooks'
 
@@ -11,9 +13,9 @@ export const Home = () => {
   return(
     <div className="flex flex-col justify-between w-full max-w-screen-2xl 2xl:mx-auto bg-black text-white">
       <Navbar />
-      <div className="md:px-16 lg:px-24 px-5">
-        <Header />
-      </div>
+      <Header />
+      <History />
+      <Contact />
     </div>
   )
 }
