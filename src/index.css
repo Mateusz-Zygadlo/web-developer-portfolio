@@ -2,11 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-  .nav-link{
-    @apply mx-2 text-lg text-gray-500 border-b border-black hover:border-gray-500 duration-500 cursor-pointer;
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
   }
-  .mobile-nav-link{
+  h1 {
+    font-family: 'Prata', serif;
+  }
+  p, li {
+    color: rgb(156 163 175);
+  }
+}
+
+@layer components {
+  .nav-link {
+    @apply mx-2 text-lg border-b border-black hover:border-gray-500 duration-500 cursor-pointer;
+  }
+  .mobile-nav-link {
     @apply my-1 text-xl border-white border-b hover:border-black duration-500 cursor-pointer;
+  }
+}
+
+@layer utilities {
+  .cardGrid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 40px;
+  }
+  @media only screen and (max-width: 400px){
+    .cardGrid {
+      display: block;
+    }
   }
 }
